@@ -22,7 +22,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  canonical: 'https://timezone-converter-tool.vercel.app',
+  alternates: {
+    canonical: 'https://timezone-converter-tool.vercel.app',
+  },
 }
 
 export default function RootLayout({
