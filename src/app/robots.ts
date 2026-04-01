@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api'],
     },
-    sitemap: 'https://timezone-converter-tool.vercel.app/sitemap.xml',
+    sitemap: 'https://timezone-converter-ashy.vercel.app/sitemap.xml',
   }
 }

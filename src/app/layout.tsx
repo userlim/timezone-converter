@@ -5,11 +5,11 @@ export const metadata: Metadata = {
   title: 'Timezone Converter – Free World Clock & Time Zone Calculator',
   description: 'Convert time zones instantly. Use our free timezone converter to calculate time differences, check world clock times, and convert between any timezones. Perfect for scheduling meetings across countries.',
   keywords: 'timezone converter, time zone calculator, world clock, time difference calculator, UTC converter',
-  metadataBase: new URL('https://timezone-converter-tool.vercel.app'),
+  metadataBase: new URL('https://timezone-converter-ashy.vercel.app'),
   openGraph: {
     title: 'Timezone Converter – Free World Clock & Time Zone Calculator',
     description: 'Convert time zones instantly with our free online timezone converter tool.',
-    url: 'https://timezone-converter-tool.vercel.app',
+    url: 'https://timezone-converter-ashy.vercel.app',
     siteName: 'Timezone Converter',
     type: 'website',
   },
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: 'https://timezone-converter-tool.vercel.app',
+    canonical: 'https://timezone-converter-ashy.vercel.app',
   },
 }
 
