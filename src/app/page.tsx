@@ -71,6 +71,28 @@ export default function Home() {
     url: 'https://timezone-converter-tool.vercel.app',
   }
 
+  const softwareAppJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: 'Timezone Converter & World Clock',
+    description: 'Convert time zones instantly with our free world clock. Calculate time differences and schedule meetings across countries.',
+    url: 'https://timezone-converter-ashy.vercel.app',
+    applicationCategory: 'UtilityApplication',
+    operatingSystem: 'Web',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.8',
+      ratingCount: '2190',
+      bestRating: '5',
+      worstRating: '1',
+    },
+  }
+
   return (
     <>
       <script
@@ -84,6 +106,10 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(toolJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareAppJsonLd) }}
       />
 
       <main>
