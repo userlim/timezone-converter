@@ -2,8 +2,8 @@ import { Metadata } from 'next'
 import Calculator from './calculator'
 
 export const metadata: Metadata = {
-  title: 'Timezone Converter – Free World Clock & Time Zone Calculator',
-  description: 'Convert time zones instantly. Use our free timezone converter to calculate time differences, check world clock times, and convert between any timezones. Perfect for scheduling meetings across countries.',
+  title: 'Free Timezone Converter (2026) – World Clock & DST-Aware Time Calculator',
+  description: 'Convert time between any world time zones instantly. Automatic DST adjustment, supports all countries. Free timezone calculator — no signup, always accurate.',
   keywords: 'timezone converter, time zone calculator, world clock, time difference calculator, UTC converter, international time',
 }
 
