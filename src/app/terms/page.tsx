@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Terms of Service - Timezone Converter',
   description: 'Terms of Service for Timezone Converter.',
+  robots: { index: false, follow: true },
 }
 
 export default function TermsOfService() {
