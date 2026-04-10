@@ -610,13 +610,13 @@ export default function Calculator() {
               {t('convert')} {t('convert')}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-purple-50 rounded-xl p-4">
+              <div className="bg-purple-500/10 rounded-xl p-4">
                 <p className="text-sm font-semibold mb-1" style={{ color: 'var(--text-muted)' }}>
                   {t('fromTimezone')}
                 </p>
                 <p className="tool-result text-4xl">{result.fromTime}</p>
               </div>
-              <div className="bg-purple-50 rounded-xl p-4">
+              <div className="bg-purple-500/10 rounded-xl p-4">
                 <p className="text-sm font-semibold mb-1" style={{ color: 'var(--text-muted)' }}>
                   {t('toTimezone')}
                 </p>
@@ -625,7 +625,7 @@ export default function Calculator() {
             </div>
 
             <div className="grid grid-cols-2 gap-4 mt-4">
-              <div className="bg-purple-50 rounded-xl p-4">
+              <div className="bg-purple-500/10 rounded-xl p-4">
                 <p className="text-sm font-semibold mb-1" style={{ color: 'var(--text-muted)' }}>
                   {t('timeDifference')}
                 </p>
@@ -633,7 +633,7 @@ export default function Calculator() {
                   {result.timeDiff > 0 ? '+' : ''}{result.timeDiff} {t('hours')}
                 </p>
               </div>
-              <div className="bg-purple-50 rounded-xl p-4">
+              <div className="bg-purple-500/10 rounded-xl p-4">
                 <p className="text-sm font-semibold mb-1" style={{ color: 'var(--text-muted)' }}>
                   {t('dayInfo')}
                 </p>
@@ -680,7 +680,7 @@ export default function Calculator() {
               const time = formatter.format(new Date())
 
               return (
-                <div key={city} className="bg-purple-50 rounded-xl p-4">
+                <div key={city} className="bg-purple-500/10 rounded-xl p-4">
                   <p className="font-semibold text-sm mb-1" style={{ color: 'var(--text-muted)' }}>
                     {city}
                   </p>
