@@ -12,17 +12,22 @@ export const metadata: Metadata = {
     description: 'Convert time zones in one click. Free 2026 world clock with timezone calculator. Perfect for scheduling international meetings — try it now.',
     url: 'https://timezone-converter-ashy.vercel.app',
     siteName: 'Timezone Converter',
+    locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Timezone Converter (Free, 2026) – World Clock & Time Zone Calculator',
+    title: 'Timezone Converter',
     description: 'Convert time zones in one click. Free 2026 world clock with timezone calculator. Perfect for scheduling international meetings — try it now.',
   },
   robots: {
     index: true,
     follow: true,
+    'max-image-preview': 'large' as const,
+    'max-snippet': -1,
+    'max-video-preview': -1,
   },
+  icons: { icon: '/favicon.svg' },
   alternates: {
     canonical: 'https://timezone-converter-ashy.vercel.app',
     languages: {
@@ -30,8 +35,7 @@ export const metadata: Metadata = {
       'x-default': 'https://timezone-converter-ashy.vercel.app',
     },
   },
-  },
-}
+};
 
 export default function RootLayout({
   children,
@@ -84,19 +88,19 @@ export default function RootLayout({
 </head>
       <body style={{ backgroundColor: 'var(--bg)', color: 'var(--text)' }}>
         {children}
-        <footer className="border-t border-white/5 py-6 text-center text-sm text-gray-500 bg-black/20 backdrop-blur-sm">
+        <footer className="border-t border-white/5 py-6 text-center text-sm text-[var(--text-secondary)] bg-black/20 backdrop-blur-sm">
           
             <div className="flex flex-wrap justify-center gap-4 mb-3">
-              <span className="text-xs text-gray-500 font-semibold uppercase tracking-wider">Related Free Tools:</span>
-                <a href="https://meettime-tawny.vercel.app" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors text-xs">Meeting Time Zone Scheduler</a>
-                <a href="https://military-draft-calculator.vercel.app" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors text-xs">Military Draft Age Calculator</a>
-                <a href="https://emoji-copy-app.vercel.app" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors text-xs">Emoji Copy & Paste Tool</a>
-                <a href="https://bmi-calculator-free.vercel.app" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors text-xs">Free BMI Calculator</a>
-                <a href="https://utilicalc.vercel.app" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors text-xs">UtiliCalc All-in-One Tools</a>
+              <span className="text-xs text-[var(--text-secondary)] font-semibold uppercase tracking-wider">Related Free Tools:</span>
+                <a href="https://meettime-tawny.vercel.app" target="_blank" rel="noopener noreferrer" className="text-[var(--text-muted)] hover:text-white transition-colors text-xs">Meeting Time Zone Scheduler</a>
+                <a href="https://military-draft-calculator.vercel.app" target="_blank" rel="noopener noreferrer" className="text-[var(--text-muted)] hover:text-white transition-colors text-xs">Military Draft Age Calculator</a>
+                <a href="https://emoji-copy-app.vercel.app" target="_blank" rel="noopener noreferrer" className="text-[var(--text-muted)] hover:text-white transition-colors text-xs">Emoji Copy & Paste Tool</a>
+                <a href="https://bmi-calculator-free.vercel.app" target="_blank" rel="noopener noreferrer" className="text-[var(--text-muted)] hover:text-white transition-colors text-xs">Free BMI Calculator</a>
+                <a href="https://utilicalc.vercel.app" target="_blank" rel="noopener noreferrer" className="text-[var(--text-muted)] hover:text-white transition-colors text-xs">UtiliCalc All-in-One Tools</a>
             </div>
           <div className="flex flex-wrap justify-center gap-4 mb-3">
-            <a href="/privacy-policy" className="text-gray-400 hover:text-white transition-colors text-xs">Privacy Policy</a>
-            <a href="/terms" className="text-gray-400 hover:text-white transition-colors text-xs">Terms of Service</a>
+            <a href="/privacy-policy" className="text-[var(--text-muted)] hover:text-white transition-colors text-xs">Privacy Policy</a>
+            <a href="/terms" className="text-[var(--text-muted)] hover:text-white transition-colors text-xs">Terms of Service</a>
           </div>
           &copy; 2026 Time Zone Converter. All rights reserved.
         </footer>

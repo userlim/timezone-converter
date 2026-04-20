@@ -164,28 +164,28 @@ export default function Home() {
         </div>
       
       {/* Extended Content Section for SEO depth */}
-      <section id="content-depth-section" className="mt-12 max-w-3xl mx-auto px-4">
-        <h2 className="text-2xl font-bold mb-6">Complete Guide</h2>
+      <section id="content-depth-section" className="mt-20 max-w-3xl mx-auto px-6 relative z-[1]">
+        <h2 className="text-h2 mb-6 text-[var(--text-primary)]">Complete Guide</h2>
         
             <div className="mb-6">
-              <h3 className="text-lg font-semibold mb-2">Understanding Time Zones: A Complete Guide</h3>
-              <p className="text-gray-400 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `Time zones divide the Earth into 24 primary zones, each roughly 15 degrees of longitude wide. The system was standardized in 1884 at the International Meridian Conference, establishing Greenwich, England as the Prime Meridian (UTC±0). However, political boundaries create irregular zone shapes, resulting in over 37 distinct UTC offsets worldwide, including unusual ones like UTC+5:45 (Nepal) and UTC+8:45 (parts of Western Australia).` }} />
+              <h3 className="text-h3 mb-2 text-[var(--text-primary)]">Understanding Time Zones: A Complete Guide</h3>
+              <p className="text-[var(--text-secondary)] leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `Time zones divide the Earth into 24 primary zones, each roughly 15 degrees of longitude wide. The system was standardized in 1884 at the International Meridian Conference, establishing Greenwich, England as the Prime Meridian (UTC±0). However, political boundaries create irregular zone shapes, resulting in over 37 distinct UTC offsets worldwide, including unusual ones like UTC+5:45 (Nepal) and UTC+8:45 (parts of Western Australia).` }} />
             </div>
             <div className="mb-6">
-              <h3 className="text-lg font-semibold mb-2">UTC, GMT, and Other Time Standards</h3>
-              <p className="text-gray-400 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `UTC (Coordinated Universal Time) is the primary time standard used globally, replacing GMT (Greenwich Mean Time) as the reference. While UTC and GMT are often used interchangeably, they differ technically: GMT is a time zone, while UTC is a time standard measured by atomic clocks. Other standards include TAI (International Atomic Time) and Unix time (seconds since January 1, 1970). Our converter uses UTC as the reference for all conversions.` }} />
+              <h3 className="text-h3 mb-2 text-[var(--text-primary)]">UTC, GMT, and Other Time Standards</h3>
+              <p className="text-[var(--text-secondary)] leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `UTC (Coordinated Universal Time) is the primary time standard used globally, replacing GMT (Greenwich Mean Time) as the reference. While UTC and GMT are often used interchangeably, they differ technically: GMT is a time zone, while UTC is a time standard measured by atomic clocks. Other standards include TAI (International Atomic Time) and Unix time (seconds since January 1, 1970). Our converter uses UTC as the reference for all conversions.` }} />
             </div>
             <div className="mb-6">
-              <h3 className="text-lg font-semibold mb-2">Daylight Saving Time: A Global Patchwork</h3>
-              <p className="text-gray-400 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `Approximately 70 countries observe DST, but the rules vary widely. The US and Canada spring forward on the second Sunday of March. The EU changes on the last Sunday of March. Russia permanently adopted "winter time" in 2014. China spans five geographical time zones but uses only one (UTC+8) with no DST. India uses a single time zone (UTC+5:30) despite spanning two geographical zones. These variations make manual time conversion error-prone.` }} />
+              <h3 className="text-h3 mb-2 text-[var(--text-primary)]">Daylight Saving Time: A Global Patchwork</h3>
+              <p className="text-[var(--text-secondary)] leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `Approximately 70 countries observe DST, but the rules vary widely. The US and Canada spring forward on the second Sunday of March. The EU changes on the last Sunday of March. Russia permanently adopted "winter time" in 2014. China spans five geographical time zones but uses only one (UTC+8) with no DST. India uses a single time zone (UTC+5:30) despite spanning two geographical zones. These variations make manual time conversion error-prone.` }} />
             </div>
             <div className="mb-6">
-              <h3 className="text-lg font-semibold mb-2">The International Date Line</h3>
-              <p className="text-gray-400 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `The International Date Line (IDL) roughly follows the 180° meridian through the Pacific Ocean but zigzags to keep island nations unified. Crossing the IDL westward advances the calendar by one day; crossing eastward sets it back one day. Notable anomalies include Kiribati, which in 1995 shifted the IDL to unify its islands, becoming the first place to enter each new day (UTC+14).` }} />
+              <h3 className="text-h3 mb-2 text-[var(--text-primary)]">The International Date Line</h3>
+              <p className="text-[var(--text-secondary)] leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `The International Date Line (IDL) roughly follows the 180° meridian through the Pacific Ocean but zigzags to keep island nations unified. Crossing the IDL westward advances the calendar by one day; crossing eastward sets it back one day. Notable anomalies include Kiribati, which in 1995 shifted the IDL to unify its islands, becoming the first place to enter each new day (UTC+14).` }} />
             </div>
             <div className="mb-6">
-              <h3 className="text-lg font-semibold mb-2">Time Zones and Remote Work</h3>
-              <p className="text-gray-400 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `The rise of remote work has made time zone literacy essential. Companies like GitLab (fully remote since founding) and Automattic operate across 65+ countries. Best practices include: using UTC for all shared calendars and deadlines, establishing core overlap hours (typically 4-5 hours), documenting decisions asynchronously, and using tools like our converter to quickly identify meeting-friendly windows across distributed teams.` }} />
+              <h3 className="text-h3 mb-2 text-[var(--text-primary)]">Time Zones and Remote Work</h3>
+              <p className="text-[var(--text-secondary)] leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `The rise of remote work has made time zone literacy essential. Companies like GitLab (fully remote since founding) and Automattic operate across 65+ countries. Best practices include: using UTC for all shared calendars and deadlines, establishing core overlap hours (typically 4-5 hours), documenting decisions asynchronously, and using tools like our converter to quickly identify meeting-friendly windows across distributed teams.` }} />
             </div>
       </section>
       </main>
@@ -206,14 +206,14 @@ export default function Home() {
       </div>
     
       {/* Keyword-Optimized Content */}
-      <section id="keyword-seo-section" className="mt-8 max-w-3xl mx-auto px-4">
-        <p className="text-sm text-gray-400 leading-relaxed">
+      <section id="keyword-seo-section" className="mt-12 max-w-3xl mx-auto px-6 pb-16 relative z-[1]">
+        <p className="text-sm text-[var(--text-muted)] leading-relaxed">
           Convert time zones instantly with our free timezone converter online. Check EST to PST, GMT to EST, and 400+ cities worldwide. Our time difference calculator handles daylight saving time automatically. See current time in any city with our world clock.
         </p>
 <div className="mt-3 flex flex-wrap gap-2">
-          <a href="https://meettime-tawny.vercel.app" className="text-xs text-blue-400 hover:underline">MeetTime →</a>
-          <a href="https://currency-exchange-calculator-wheat.vercel.app" className="text-xs text-blue-400 hover:underline">Currency Converter →</a>
-          <a href="https://military-draft-calculator.vercel.app" className="text-xs text-blue-400 hover:underline">Draft Age Calculator →</a>
+          <a href="https://meettime-tawny.vercel.app" className="text-xs text-[var(--accent)] hover:underline opacity-70 hover:opacity-100">MeetTime →</a>
+          <a href="https://currency-exchange-calculator-wheat.vercel.app" className="text-xs text-[var(--accent)] hover:underline opacity-70 hover:opacity-100">Currency Converter →</a>
+          <a href="https://military-draft-calculator.vercel.app" className="text-xs text-[var(--accent)] hover:underline opacity-70 hover:opacity-100">Draft Age Calculator →</a>
         </div>
 
       </section>
