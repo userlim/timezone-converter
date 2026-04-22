@@ -507,13 +507,13 @@ export default function Calculator() {
                   <div className="flex gap-2 flex-1">
                     <button
                       onClick={() => setState(prev => ({ ...prev, isPM: false }))}
-                      className={`flex-1 py-2.5 rounded-xl text-sm font-medium transition-all ${!state.isPM ? 'bg-[var(--accent)] text-white shadow-[var(--shadow-glow)]' : 'bg-[rgba(255,255,255,0.03)] text-[var(--text-secondary)] hover:bg-[rgba(255,255,255,0.06)]'}`}
+                      className={`flex-1 py-2.5 rounded-xl text-sm font-medium transition-all ${!state.isPM ? 'bg-[var(--accent)] text-[#191F28] shadow-md' : 'bg-white text-[#4E5968] hover:bg-[#F7F8FA]'}`}
                     >
                       AM
                     </button>
                     <button
                       onClick={() => setState(prev => ({ ...prev, isPM: true }))}
-                      className={`flex-1 py-2.5 rounded-xl text-sm font-medium transition-all ${state.isPM ? 'bg-[var(--accent)] text-white shadow-[var(--shadow-glow)]' : 'bg-[rgba(255,255,255,0.03)] text-[var(--text-secondary)] hover:bg-[rgba(255,255,255,0.06)]'}`}
+                      className={`flex-1 py-2.5 rounded-xl text-sm font-medium transition-all ${state.isPM ? 'bg-[var(--accent)] text-[#191F28] shadow-md' : 'bg-white text-[#4E5968] hover:bg-[#F7F8FA]'}`}
                     >
                       PM
                     </button>
