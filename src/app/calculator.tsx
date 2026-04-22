@@ -480,7 +480,7 @@ export default function Calculator() {
                   max={state.is24h ? '23' : '12'}
                   value={state.hours}
                   onChange={e => setState(prev => ({ ...prev, hours: e.target.value }))}
-                  className="input w-20"
+                  className="tool-input w-20"
                   placeholder="HH"
                 />
                 <span className="text-2xl font-bold self-center" style={{ color: 'var(--text)' }}>:</span>
@@ -490,7 +490,7 @@ export default function Calculator() {
                   max="59"
                   value={state.minutes}
                   onChange={e => setState(prev => ({ ...prev, minutes: e.target.value }))}
-                  className="input w-20"
+                  className="tool-input w-20"
                   placeholder="MM"
                 />
               </div>
@@ -507,13 +507,17 @@ export default function Calculator() {
                   <div className="flex gap-2 flex-1">
                     <button
                       onClick={() => setState(prev => ({ ...prev, isPM: false }))}
-                      className={`flex-1 py-2.5 rounded-xl text-sm font-medium transition-all ${!state.isPM ? 'bg-[var(--accent)] text-[#191F28] shadow-md' : 'bg-white text-[#4E5968] hover:bg-[#F7F8FA]'}`}
+                      className={`flex-1 py-2 rounded-lg font-semibold transition-all ${
+                        !state.isPM ? 'btn-primary' : 'btn-secondary'
+                      }`}
                     >
                       AM
                     </button>
                     <button
                       onClick={() => setState(prev => ({ ...prev, isPM: true }))}
-                      className={`flex-1 py-2.5 rounded-xl text-sm font-medium transition-all ${state.isPM ? 'bg-[var(--accent)] text-[#191F28] shadow-md' : 'bg-white text-[#4E5968] hover:bg-[#F7F8FA]'}`}
+                      className={`flex-1 py-2 rounded-lg font-semibold transition-all ${
+                        state.isPM ? 'btn-primary' : 'btn-secondary'
+                      }`}
                     >
                       PM
                     </button>
@@ -531,7 +535,7 @@ export default function Calculator() {
                 type="date"
                 value={state.date}
                 onChange={e => setState(prev => ({ ...prev, date: e.target.value }))}
-                className="input mb-3"
+                className="tool-input mb-3"
               />
               <button onClick={handleUseCurrentTime} className="btn-primary w-full">
                 {t('useCurrentTime')}
@@ -548,7 +552,7 @@ export default function Calculator() {
               <select
                 value={state.fromTz}
                 onChange={e => setState(prev => ({ ...prev, fromTz: e.target.value }))}
-                className="input"
+                className="tool-input"
               >
                 {Object.entries(groupedTimezones).map(([region, tzs]) => (
                   <optgroup key={region} label={region}>
@@ -569,7 +573,7 @@ export default function Calculator() {
               <select
                 value={state.toTz}
                 onChange={e => setState(prev => ({ ...prev, toTz: e.target.value }))}
-                className="input"
+                className="tool-input"
               >
                 {Object.entries(groupedTimezones).map(([region, tzs]) => (
                   <optgroup key={region} label={region}>
@@ -606,13 +610,13 @@ export default function Calculator() {
               {t('convert')} {t('convert')}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-[rgba(var(--accent-rgb),0.08)] rounded-xl p-4">
+              <div className="bg-purple-50 rounded-xl p-4">
                 <p className="text-sm font-semibold mb-1" style={{ color: 'var(--text-muted)' }}>
                   {t('fromTimezone')}
                 </p>
                 <p className="tool-result text-4xl">{result.fromTime}</p>
               </div>
-              <div className="bg-[rgba(var(--accent-rgb),0.08)] rounded-xl p-4">
+              <div className="bg-purple-50 rounded-xl p-4">
                 <p className="text-sm font-semibold mb-1" style={{ color: 'var(--text-muted)' }}>
                   {t('toTimezone')}
                 </p>
@@ -621,7 +625,7 @@ export default function Calculator() {
             </div>
 
             <div className="grid grid-cols-2 gap-4 mt-4">
-              <div className="bg-[rgba(var(--accent-rgb),0.08)] rounded-xl p-4">
+              <div className="bg-purple-50 rounded-xl p-4">
                 <p className="text-sm font-semibold mb-1" style={{ color: 'var(--text-muted)' }}>
                   {t('timeDifference')}
                 </p>
@@ -629,7 +633,7 @@ export default function Calculator() {
                   {result.timeDiff > 0 ? '+' : ''}{result.timeDiff} {t('hours')}
                 </p>
               </div>
-              <div className="bg-[rgba(var(--accent-rgb),0.08)] rounded-xl p-4">
+              <div className="bg-purple-50 rounded-xl p-4">
                 <p className="text-sm font-semibold mb-1" style={{ color: 'var(--text-muted)' }}>
                   {t('dayInfo')}
                 </p>
@@ -676,7 +680,7 @@ export default function Calculator() {
               const time = formatter.format(new Date())
 
               return (
-                <div key={city} className="bg-[rgba(var(--accent-rgb),0.08)] rounded-xl p-4">
+                <div key={city} className="bg-purple-50 rounded-xl p-4">
                   <p className="font-semibold text-sm mb-1" style={{ color: 'var(--text-muted)' }}>
                     {city}
                   </p>
